@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poetsen One", sans-serif;
+    font-style: normal;
+}
+header{
+    height: 6em;
+}
+.headings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#wingame {
+    margin-top: 30px;
+    font-size: 2em;
+    height: 2em;
+}
+h1 {
+    font-size: 2.5em;
+    font-weight: 400;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 21em;
+    width: 20em;
+    gap: 13px;
+}
+.body{
+    background-color: #FFFFFF;
+    background-image: url(https://img.freepik.com/premium-vector/abstract-nature-illustration-vector-game-background_303920-38.jpg);
+}
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+.gdchild {
+    border-radius: 1em;
+    box-shadow: 0 0 36px black, inset 0 0 26px black;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
