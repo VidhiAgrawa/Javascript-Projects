@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poetsen One", sans-serif;
+    font-style: normal;
+}
+body {
+    height: 100%;
+    background-image: url(https://png.pngtree.com/background/20210715/original/pngtree-green-simple-art-background-picture-image_1290536.jpg);
+    background-size: cover;
+}
+header {
+    height: 5em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+main {
+    height: 35em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+/* input::placeholder{
+    padding-left: 1em;
+} */
+input.todoinput {
+    height: 4em;
+    width: 20em;
+    border-radius: 1em;
+    margin-top: 4em;
+    padding-left: 1em;
+
+}
+button.btn {
+    height: 3em;
+    width: 9em;
+    border-radius: 0.8em;
+}
+.todo{
+    display: flex;
+}
+.cross {
+    margin-left: 3em;
+}
+
