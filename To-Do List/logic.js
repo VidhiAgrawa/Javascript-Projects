@@ -43,8 +43,6 @@ const reload = document.createElement( "div" )
 reload.setAttribute( "class", "reload" )
 reload.textContent = "Reload"
 
-// document.querySelector("main").append( reload )
-
 reload.addEventListener( "click", () => {
     window.location.reload()
 } )

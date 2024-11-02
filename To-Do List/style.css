@@ -23,9 +23,7 @@ main {
     flex-direction: column;
     gap: 2em;
 }
-/* input::placeholder{
-    padding-left: 1em;
-} */
+
 input.todoinput {
     height: 4em;
     width: 20em;

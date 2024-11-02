@@ -2,8 +2,7 @@ let choice = localStorage.getItem( "myChoice" )
 const grid = document.querySelectorAll(".gdchild")
 const winGame = document.querySelector("#wingame")
 let arr = []
-// let choice = "X"
-// grid boxes are called
+
 let b1 = document.querySelector("#box1")
 let b2 = document.querySelector("#box2")
 let b3 = document.querySelector("#box3")
