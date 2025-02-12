@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poetsen One", sans-serif;
+    font-style: normal;
+}
+header {
+    height: 4em;
+    text-align: center;
+    padding-top: 1em;
+}
+.grid {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    height: 24em;
+    width: 19em;
+    gap: 10px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35em;
+    gap: 1em;
+}
+.gridbox {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #45413c;
+    color: white;
+}
+input.input {
+    height: 5em;
+    width: 21em;
+    outline: none;
+    border: none;
+    border-radius: 2em;
+    background: #4d4944;
+    padding-left: 3em;
+    color: white;
+}
