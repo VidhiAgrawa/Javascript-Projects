@@ -1,0 +1,55 @@
+*{
+    font-family: cursive;
+}
+body {
+    background-color: #f7f7f7;
+}
+.heading {
+    text-align: center;
+}
+.same:hover{
+    cursor: pointer;
+}
+.same {
+    border: 2px solid transparent;
+}
+#stone {
+    height: 12em;
+    width: 13em;
+    background-image: url(images/stone.png);
+    background-size: cover;
+}
+#paper {
+    height: 12em;
+    width: 12em;
+    background-image: url(images/paper.png);
+    background-size: cover;
+}
+#scissor {
+    height: 11em;
+    width: 14em;
+    background-image: url(images/scissor.png);
+    background-size: cover;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    margin-top: 3em;
+}
+.score {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    margin-top: 1em;
+    font-size: 2em;
+}
+#gs {
+    text-align: center;
+    margin-bottom: -18px;
+}
+.resultBox {
+    text-align: center;
+    font-size: 2em;
+    margin-top: -25px;
+}
