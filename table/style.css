@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poetsen One", sans-serif;
+    font-style: normal;
+}
+h1 {
+    text-align: center;
+    margin-top: 1em;
+    background: #ffeadd;
+    height: 1.5em;
+    padding-top: 0.2em;
+}
+body{
+    background-image: url(https://png.pngtree.com/background/20210712/original/pngtree-cute-hand-drawn-style-mathematics-education-pink-plaid-background-picture-image_1176715.jpg);
+    background-size: cover;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 31em;
+    flex-direction: column;
+    width: 33em;
+    gap: 5em;
+}
+
+input::placeholder{
+    padding-left: 1em;
+}
+#input2{
+    height: 4em;
+    width: 25em;
+}
+.btn{
+    height: 3em;
+    width: 10em;
+}
+.tablecont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+.back{
+    height: 3em;
+    width: 10em;
+}
