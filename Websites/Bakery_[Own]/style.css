@@ -200,3 +200,12 @@ img.menuimg1 {
 .fa-heart {
     font-size: 2em;
 }
+.both {
+    display: flex;
+    justify-content: space-around;
+    width: 10em;
+    align-items: center;
+}
+.info {
+    font-size: x-large;
+}

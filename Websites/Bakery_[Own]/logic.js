@@ -242,7 +242,7 @@ categoryHead.innerHTML = `<span class="S">C</span>ategory :-`
 const categoryGrid = document.createElement("div")
 categoryGrid.setAttribute("class", "categorygrid")
 // item
-for( i = 1; i <= 5; i++ ){
+for( let i = 1; i <= 5; i++ ){
     const cateItems = document.createElement("div")
     cateItems.setAttribute("id", `cateitems${i}`)
     cateItems.setAttribute("class", `cateitems`)
@@ -294,7 +294,7 @@ productHead.style.marginTop = "0.5em"
 const productGrid = document.createElement("div")
 productGrid.setAttribute("class", "productgrid")
 
-for( i = 1; i <= 7; i++ ){
+for( let i = 1; i <= 7; i++ ){
     const productItem = document.createElement("div")
     productItem.setAttribute("id", `productitem${i}`)
     productItem.setAttribute("class", "productitem")
@@ -331,27 +331,18 @@ async function fetchData(){
             liked.setAttribute("class", "liked")
             liked.innerHTML = `<i class="fa-regular fa-heart" style="color: #000000;"></i> Like`
             
-            each.append(productImage, productPrice, productName, liked)
+            let info = document.createElement("div")
+            info.setAttribute("class", "info")
+            info.innerHTML = `<i class="fa-solid fa-circle-info"></i>`
+
+            let both = document.createElement("div")
+            both.setAttribute("class", "both")
+            both.append(liked, info)
+
+            each.append(productImage, productPrice, productName, both)
             
-            let show = false;
-            
-            liked.addEventListener( "click", () => {
-                show = (show) ? false : true
-                if( show ){
-                    liked.style.color = "red"
-                    liked.innerHTML = `<i class="fa-solid fa-heart" style="color: #ff0000;"></i> Liked`
-                }
-                else{
-                    liked.style.color = "black"
-                    liked.innerHTML = `<i class="fa-regular fa-heart" style="color: #000000;"></i> Like`
-                }
-            } )
 
         } ) 
-        
-        
-        
-        
     } 
     catch (error) {
         console.log(error)
@@ -370,7 +361,7 @@ main.append(footer)
 const footerBlock = document.createElement("div")
 footerBlock.setAttribute( "class", "footerblock" )
 
-for( i = 1; i <= 20; i++ ){
+for( let i = 1; i <= 20; i++ ){
     let footercon = document.createElement("div")
     footercon.setAttribute("class", "footercon")
     footercon.textContent = "@Copyright"
