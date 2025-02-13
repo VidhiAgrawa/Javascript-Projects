@@ -330,16 +330,8 @@ async function fetchData(){
             let liked = document.createElement("div")
             liked.setAttribute("class", "liked")
             liked.innerHTML = `<i class="fa-regular fa-heart" style="color: #000000;"></i> Like`
-            
-            let info = document.createElement("div")
-            info.setAttribute("class", "info")
-            info.innerHTML = `<i class="fa-solid fa-circle-info"></i>`
-
-            let both = document.createElement("div")
-            both.setAttribute("class", "both")
-            both.append(liked, info)
-
-            each.append(productImage, productPrice, productName, both)
+        
+            each.append(productImage, productPrice, productName, liked)
             
 
         } ) 
