@@ -330,7 +330,20 @@ async function fetchData(){
             let liked = document.createElement("div")
             liked.setAttribute("class", "liked")
             liked.innerHTML = `<i class="fa-regular fa-heart" style="color: #000000;"></i> Like`
-        
+            
+            let show = false;
+            
+            liked.addEventListener( "click", () => {
+                show = (show) ? false : true
+                if( show ){
+                    liked.style.color = "red"
+                    liked.innerHTML = `<i class="fa-solid fa-heart" style="color: #ff0000;"></i> Liked`
+                }
+                else{
+                    liked.style.color = "black"
+                    liked.innerHTML = `<i class="fa-regular fa-heart" style="color: #000000;"></i> Like`
+                }
+            })
             each.append(productImage, productPrice, productName, liked)
             
 
