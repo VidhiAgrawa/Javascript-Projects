@@ -315,6 +315,13 @@ async function fetchData(){
 
         item.forEach( (each, i) => {
             
+            let info = document.createElement("a")
+            info.setAttribute( "class", "info" )
+            info.setAttribute( "href", "description.html" )
+            info.setAttribute("target", "_blank"); 
+            info.innerHTML = `<i class="fa-solid fa-circle-info"></i>`
+
+
             let productImage = document.createElement("img")
             productImage.setAttribute("class", "productimage")
             productImage.src = data[i].images
@@ -327,10 +334,21 @@ async function fetchData(){
             productName.setAttribute("class", "productname")
             productName.innerHTML = data[i].title
 
+            let both = document.createElement("div")
+            both.setAttribute("class", "both")
+
+            // liked content
+
             let liked = document.createElement("div")
             liked.setAttribute("class", "liked")
             liked.innerHTML = `<i class="fa-regular fa-heart" style="color: #000000;"></i> Like`
             
+            both.append(liked)
+
+            const add = document.createElement("button");
+            add.setAttribute("class", "add");
+            add.textContent = "Add to Cart";
+
             let show = false;
             
             liked.addEventListener( "click", () => {
@@ -338,13 +356,20 @@ async function fetchData(){
                 if( show ){
                     liked.style.color = "red"
                     liked.innerHTML = `<i class="fa-solid fa-heart" style="color: #ff0000;"></i> Liked`
+                    
                 }
                 else{
                     liked.style.color = "black"
                     liked.innerHTML = `<i class="fa-regular fa-heart" style="color: #000000;"></i> Like`
                 }
+                if (show) {
+                    liked.parentNode.insertBefore(add, liked.nextSibling);
+                } else {
+                    add.remove(); 
+                }
             })
-            each.append(productImage, productPrice, productName, liked)
+            // liked content end here
+            each.append(info, productImage, productPrice, productName, both)
             
 
         } ) 
