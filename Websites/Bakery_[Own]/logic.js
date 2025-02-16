@@ -317,11 +317,8 @@ async function fetchData(){
             
             let info = document.createElement("a")
             info.setAttribute( "class", "info" )
-            info.setAttribute( "href", "description.html" )
-            info.setAttribute("target", "_blank"); 
             info.innerHTML = `<i class="fa-solid fa-circle-info"></i>`
-
-
+            
             let productImage = document.createElement("img")
             productImage.setAttribute("class", "productimage")
             productImage.src = data[i].images
@@ -329,14 +326,18 @@ async function fetchData(){
             let productPrice = document.createElement("div")
             productPrice.setAttribute("class", "productprice")
             productPrice.innerHTML = data[i].price
-
-            let productName = document.createElement("div")
-            productName.setAttribute("class", "productname")
-            productName.innerHTML = data[i].title
-
+            
+            let productname = document.createElement("div")
+            productname.setAttribute("class", "productname")
+            productname.innerHTML = data[i].title
+            
             let both = document.createElement("div")
             both.setAttribute("class", "both")
-
+            
+            info.addEventListener( "click", () => {
+                localStorage.setItem("productImage", productImage.src)
+                window.location.href = "description.html"
+            } )
             // liked content
 
             let liked = document.createElement("div")
@@ -344,7 +345,7 @@ async function fetchData(){
             liked.innerHTML = `<i class="fa-regular fa-heart" style="color: #000000;font-size:25px"></i> Like`
             
             both.append(liked)
-
+            
             const add = document.createElement("button");
             add.setAttribute("class", "addBtn");
             add.textContent = "Add to Cart";
@@ -369,7 +370,7 @@ async function fetchData(){
                 }
             })
             // liked content end here
-            each.append(info, productImage, productPrice, productName, both)
+            each.append(info, productImage, productPrice, productname, both)
             
 
         } ) 
