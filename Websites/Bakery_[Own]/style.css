@@ -209,13 +209,15 @@ img.menuimg1 {
 .info {
     font-size: x-large;
 }
-.add {
+.addBtn {
     background-color: #e4ab00;
-    height: 3em;
+    height: 2.7em;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 2px solid grey;
+    border-radius: 1.4em;
+    width: 6.5em;
 }
 .info {
     position: absolute;

@@ -294,7 +294,7 @@ productHead.style.marginTop = "0.5em"
 const productGrid = document.createElement("div")
 productGrid.setAttribute("class", "productgrid")
 
-for( let i = 1; i <= 7; i++ ){
+for( let i = 1; i <= 20; i++ ){
     const productItem = document.createElement("div")
     productItem.setAttribute("id", `productitem${i}`)
     productItem.setAttribute("class", "productitem")
@@ -341,12 +341,12 @@ async function fetchData(){
 
             let liked = document.createElement("div")
             liked.setAttribute("class", "liked")
-            liked.innerHTML = `<i class="fa-regular fa-heart" style="color: #000000;"></i> Like`
+            liked.innerHTML = `<i class="fa-regular fa-heart" style="color: #000000;font-size:25px"></i> Like`
             
             both.append(liked)
 
             const add = document.createElement("button");
-            add.setAttribute("class", "add");
+            add.setAttribute("class", "addBtn");
             add.textContent = "Add to Cart";
 
             let show = false;
@@ -355,12 +355,12 @@ async function fetchData(){
                 show = (show) ? false : true
                 if( show ){
                     liked.style.color = "red"
-                    liked.innerHTML = `<i class="fa-solid fa-heart" style="color: #ff0000;"></i> Liked`
+                    liked.innerHTML = `<i class="fa-solid fa-heart" style="color: #ff0000; font-size:25px"></i> Liked`
                     
                 }
                 else{
                     liked.style.color = "black"
-                    liked.innerHTML = `<i class="fa-regular fa-heart" style="color: #000000;"></i> Like`
+                    liked.innerHTML = `<i class="fa-regular fa-heart" style="color: #000000;font-size:25px"></i> Like`
                 }
                 if (show) {
                     liked.parentNode.insertBefore(add, liked.nextSibling);
