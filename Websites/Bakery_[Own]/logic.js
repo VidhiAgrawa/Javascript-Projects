@@ -330,12 +330,34 @@ async function fetchData(){
             let productname = document.createElement("div")
             productname.setAttribute("class", "productname")
             productname.innerHTML = data[i].title
+
+            let productSize = document.createElement("div")
+            productSize.setAttribute("class", "productSize")
+            productSize.innerHTML = data[i].size
+
+            let expDate = document.createElement("div")
+            expDate.setAttribute("class", "expDate")
+            expDate.innerHTML = data[i].expDate
+
+            let mfdDate = document.createElement("div")
+            mfdDate.setAttribute("class", "mfdDate")
+            mfdDate.innerHTML = data[i].mfdDate
+
+            let desc = document.createElement("div")
+            desc.setAttribute("class", "desc")
+            desc.innerHTML = data[i].description
             
             let both = document.createElement("div")
             both.setAttribute("class", "both")
             
             info.addEventListener( "click", () => {
                 localStorage.setItem("productImage", productImage.src)
+                localStorage.setItem("productname", productname.innerText)
+                localStorage.setItem("productPrice", productPrice.innerText)
+                localStorage.setItem("productSize", productSize.innerText)
+                localStorage.setItem("expDate", expDate.innerText)
+                localStorage.setItem("mfdDate", mfdDate.innerText)
+                localStorage.setItem("desc", desc.innerText)
                 window.location.href = "description.html"
             } )
             // liked content
