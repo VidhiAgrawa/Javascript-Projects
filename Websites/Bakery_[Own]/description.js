@@ -62,15 +62,22 @@ desc.innerHTML = `Description : ${getdesc}`
 // back to home page
 const btn = document.createElement( "div" )
 btn.setAttribute("class", "btn")
-
+// button 
 const button = document.createElement( "button" )
 button.setAttribute( "id", "button" )
 button.innerHTML = `Back -)`
 
+let intervalNum = 4
 button.addEventListener( "click", () => {
-    window.location.href = `index.html`
+    let interval = setInterval( () => {
+        intervalNum--
+        button.innerHTML = `Back -)${intervalNum}`
+        if( intervalNum == 0 ){
+            window.location.href = `index.html`
+            
+        }
+    }, 1000 )
 } )
-
 
 btn.appendChild(button)
 date.append( mfdDate, expDate )

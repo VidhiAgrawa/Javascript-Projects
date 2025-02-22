@@ -4,7 +4,22 @@
     font-family: "Poetsen One", sans-serif;
     color: black;
 }
-
+body{
+    animation: animate 3s ease-in-out ;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+        background-color: #fef1eb;
+    }
+    /* 50%{
+        background-color: #fef1eb;
+        opacity: 0.5;
+    } */
+    100%{
+        opacity: 1;
+    }
+}
 .navbar {
     height: 5.5em;
     width: 100%;

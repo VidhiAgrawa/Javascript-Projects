@@ -8,6 +8,8 @@
 main{
     height: 100%;
     width: 100%;
+    animation: incomingNavAnimation 1.5s ease-in-out;
+    
 }
 .gridDiv {
     height: 40.05em;
@@ -72,4 +74,12 @@ button#button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@keyframes incomingNavAnimation {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

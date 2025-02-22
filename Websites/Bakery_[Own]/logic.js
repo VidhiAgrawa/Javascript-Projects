@@ -358,6 +358,7 @@ async function fetchData(){
                 localStorage.setItem("expDate", expDate.innerText)
                 localStorage.setItem("mfdDate", mfdDate.innerText)
                 localStorage.setItem("desc", desc.innerText)
+                
                 window.location.href = "description.html"
             } )
             // liked content
