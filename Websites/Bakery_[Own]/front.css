@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poetsen One", sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+}
+.hello{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2{
+    background-image: url("floral.jpg");
+    background-clip: text;
+    background-size: contain;
+    color: transparent;
+}
+#box{
+    font-weight: 700;
+    font-size: 3em;
+    opacity: 0;
+}
+.box1{
+    animation: textAnimate 5.8s linear 0.3s;  
+}
+.box2{
+    animation: textAnimate 6.1s linear 0.6s;  
+}
+.box3{
+    animation: textAnimate 6.4s linear 0.9s;  
+}
+.box4{
+    animation: textAnimate 6.7s linear 1.2s;  
+}
+.box5{
+    animation: textAnimate 7s linear 1.5s;  
+}
+@keyframes textAnimate {
+    0%{
+        transform: translatey(-10em);
+        opacity: 0;
+    }
+    12%{
+        transform: translateY(0em);
+        opacity: 0.5;
+    }
+    14%{
+        transform: translateY(1em);
+        opacity: 0.7;
+    }
+    18%{
+        transform: translateY(0em);
+        opacity: 1;
+        
+    }
+    21%{
+        transform: translateY(1em);
+        opacity: 1;
+    }
+    25%{
+        opacity: 1;
+        transform: translateY(0em);
+    }
+    80%{
+        opacity: 1;
+    }
+}
+
+#wellBox{
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+    opacity: 1;
+    margin-top: -2em;
+    
+}
+
+
+@keyframes welcomeAnimate {
+    0%{
+        opacity: 0;
+    }
+    75%{
+        transform: translatey(-10em);
+        opacity: 0;
+    }
+    87%{
+        transform: translateY(0em);
+        opacity: 1;
+    }
+    89%{
+        transform: translateY(1em);
+        opacity: 1;
+    }
+    93%{
+        transform: translateY(0em);
+        opacity: 1;
+        
+    }
+    96%{
+        transform: translateY(1em);
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0em);
+    }
+}
+
+    .box6{
+        animation: welcomeAnimate 10s linear ;
+    }
+    .box7{
+        animation: welcomeAnimate 10.2s linear ;  
+    }
+    .box8{
+        animation: welcomeAnimate 10.4s linear ;  
+    }
+    .box9{
+        animation: welcomeAnimate 10.8s linear ;  
+    }
+    .box10{
+        animation: welcomeAnimate 11s linear  ;
+    }
+    .box11{
+        animation: welcomeAnimate 11.2s linear ;  
+    }
+    .box12{
+        animation: welcomeAnimate 11.4s linear ;  
+    }
+
+    .box14{
+        animation: welcomeAnimate 11.6s linear ;  
+    }
+    .box15{
+        animation: welcomeAnimate 11.8s linear ;  
+    }
+
+    .box17{
+        animation: welcomeAnimate 12s linear ;  
+    }
+    .box18{
+        animation: welcomeAnimate 12.2s linear ;  
+    }
+    .box19{
+        animation: welcomeAnimate 12.4s linear ;  
+    }
+
+    .box21{
+        animation: welcomeAnimate 12.6s linear ;  
+    }
+    .box22{
+        animation: welcomeAnimate 12.8s linear ;  
+    }
+    .box23{
+        animation: welcomeAnimate 13s linear ;  
+    }
+    .box24{
+        animation: welcomeAnimate 13.2s linear ;  
+    }
+    .box25{
+        animation: welcomeAnimate 13.4s linear ;  
+    }
+    .box26{
+        animation: welcomeAnimate 13.6s linear ;  
+    }
+    .box27{
+        animation: welcomeAnimate 13.8s linear ;  
+    }
+    .box29{
+        animation: welcomeAnimate 14s linear ;  
+    }
+    .box30{
+        animation: welcomeAnimate 14.2s linear ;  
+    }
+    .box31{
+        animation: welcomeAnimate 14.4s linear ;  
+    }
+    .box32{
+        animation: welcomeAnimate 14.6s linear ;  
+    }
+    
+    button {
+        height: 2em;
+        width: 7em;
+        border: none;
+        background-color: grey;
+        color: white;
+        font-size: x-large;
+        margin-top: 2em;
+        border-radius: 13px;
+        animation: welcomeAnimate 16s linear ;  
+}

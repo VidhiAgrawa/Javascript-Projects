@@ -3,123 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="front.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poetsen+One&display=swap" rel="stylesheet">
     <title>Document</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-            font-family: "Poetsen One", sans-serif;
-            color: black;
-        }
-        main{
-            height: 100vh;
-            width: 100vw;
-            background-color: #fef1eb;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        h1{
-            animation: hello 2s linear forwards ;
-            display: flex;
-            align-items: center;
-        }
-        h2{
-            opacity: 0;
-            animation: fadeIn 2s linear forwards 2s;
-
-        }
-        @keyframes hello{
-            0%{
-                transform: translatey(-9em);
-            }
-            30%{
-                transform: translatey(-4em) translatex(0.4em);
-
-            }
-            50%{
-                transform: translatey(-2.3em);
-            }
-            60%{
-                transform: translatey(-2.5em);
-            }
-            90%{
-                transform: translatey(2em);
-
-            }
-            100%{
-                transform: translatey(1em);
-            }
-        }
-                
-        @keyframes fadeIn {
-            0%{
-                transform: translatey(-12em);
-                opacity: 1;
-            }
-            30%{
-                transform: translatey(-4em) translatex(0.4em);
-                opacity: 1;
-                
-            }
-            50%{
-                transform: translatey(-2.3em);
-                opacity: 1;
-            }
-            60%{
-                transform: translatey(-2.5em);
-                opacity: 1;
-            }
-            90%{
-                transform: translatey(2em);
-                opacity: 1;
-                
-            }
-            100%{
-                transform: translatey(1em);
-                opacity: 1;
-            }
-        }
-        .animationDiv {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            height: 10em;
-            width: 30em;
-        }
-        h2{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .btn{
-            margin-top: 2em;
-            height: 3em;
-            width: 8em;
-            border-radius: 2em;
-            box-shadow: 2px 2px 4px rgb(181, 55, 76), inset 4px 3px 18px 2px rgb(181, 55, 76) ;
-        }
-    </style>
 </head>
 <body>
-    <main>
-        <div class="animationDiv">
-            <h1>Hello,</h1>
-            <h2>Welcome to Baker's Shop</h2>
-            
-        </div>
-        <button class="btn">Enter</button>
-    </main>
+    <div class="hello">
+        <div class="box1" id="box"><h1>H</h1></div>
+        <div class="box2" id="box"><h1>E</h1></div>
+        <div class="box3" id="box"><h1>L</h1></div>
+        <div class="box4" id="box"><h1>L</h1></div>
+        <div class="box5" id="box"><h1>O</h1></div>
+    </div>
+    <div class="hello">
+        <div class="box6" id="wellBox"><h2>W</h2></div>
+        <div class="box7" id="wellBox"><h2>E</h2></div>
+        <div class="box8" id="wellBox"><h2>L</h2></div>
+        <div class="box9" id="wellBox"><h2>C</h2></div>
+        <div class="box10" id="wellBox"><h2>O</h2></div>
+        <div class="box11" id="wellBox"><h2>M</h2></div>
+        <div class="box12" id="wellBox"><h2>E</h2></div>
+        <div class="box13" id="wellBox"><h2>&nbsp;</h2></div>
+        <div class="box14" id="wellBox"><h2>T</h2></div>
+        <div class="box15" id="wellBox"><h2>O</h2></div>
+        <div class="box16" id="wellBox"><h2>&nbsp;</h2></div>
+        <div class="box17" id="wellBox"><h2>O</h2></div>
+        <div class="box18" id="wellBox"><h2>U</h2></div>
+        <div class="box19" id="wellBox"><h2>R</h2></div>
+        <div class="box20" id="wellBox"><h2>&nbsp;</h2></div>
+        <div class="box21" id="wellBox"><h2>B</h2></div>
+        <div class="box22" id="wellBox"><h2>A</h2></div>
+        <div class="box23" id="wellBox"><h2>K</h2></div>
+        <div class="box24" id="wellBox"><h2>E</h2></div>
+        <div class="box25" id="wellBox"><h2>R</h2></div>
+        <div class="box26" id="wellBox"><h2>'</h2></div>
+        <div class="box27" id="wellBox"><h2>S</h2></div>
+        <div class="box28" id="wellBox"><h2>&nbsp;</h2></div>
+        <div class="box29" id="wellBox"><h2>S</h2></div>
+        <div class="box30" id="wellBox"><h2>H</h2></div>
+        <div class="box31" id="wellBox"><h2>O</h2></div>
+        <div class="box32" id="wellBox"><h2>P</h2></div>
+
+    </div>
+    <button class="btn" style="display: none;">ENTER</button>
+    <!-- <div class="box6" id="box"><h1>W</h1></div> -->
+    <!-- <h2>WELCOME TO OUR WEBSITE</h2> -->
 </body>
 </html>
-    <script>
-        const btn = document.querySelector(".btn")
-        btn.addEventListener( "click", () => {
-            window.location.href = `index.html`
-        } )
-    </script>
+<script>
+    const btn = document.querySelector("button")
+        btn.style.display = "block"; // Show button after 10 seconds
+        btn.addEventListener("click", () => {
+            window.location.href = `index.html`;
+        });
+
+</script>
