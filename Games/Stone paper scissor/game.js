@@ -30,7 +30,6 @@ const comp = (element) => {
         if( 2 == random ){
             click = "scissor"
         }
-        // "2px solid #40E0D0" 
         document.querySelector(`#${click}` ).style.boxShadow = " 0 0 2em #40E0D0 " 
         document.querySelector(`#${click}` ).style.borderRadius = "20px"
         document.querySelector(`#${userId}` ).style.boxShadow = " 0 0 2em #FFB1B1 "
